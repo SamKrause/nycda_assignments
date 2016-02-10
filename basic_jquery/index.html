@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Star Wars</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        background-color: black;
+      }
+      .custom {
+        cursor: url(http://cur.cursors-4u.net/mechanics/images1/mec63.gif), auto;
+      }
+      .death-star {
+        display: inline-block;
+
+      }
+    </style>
+  </head>
+  <body class='custom'>
+    <div class='death-star' id='pos1' onclick="move('pos1', 'pos2')">
+      <img src='http://i669.photobucket.com/albums/vv60/ANTONIETTA_album/Death-Star-starcopia.png' style='width:300px;height:200px;display:inline-block;margin:0;'>
+    </div>
+    <div class='death-star' id='pos2' onclick="move('pos2', 'pos3')" style='position:absolute;left:200px;top:200px'></div>
+    <div class='death-star' id='pos3' onclick="move('pos3', 'pos4')" style='position:absolute;left:900px;top:400px'></div>
+    <div class='death-star' id='pos4' onclick="move('pos4', 'pos5')" style='position:absolute;left:600px;top:50px'></div>
+    <div class='death-star' id='pos5' onclick="move('pos5', 'pos6')" style='position:absolute;left:800px;top:300px'></div>
+    <div class='death-star' id='pos6' style='position:absolute;left:400px;top:400px'></div>
+  </body>
+  <script src='main.js'></script>
+  <script src='from_val.js'></script>
+  <script src='to_val.js'></script>
+</html>
