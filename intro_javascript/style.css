@@ -1,0 +1,25 @@
+header {
+  font-size: 36px;
+  width: 500px;
+  height: 40px;
+  text-align: center;
+}
+#timer {
+  font-size: 36px;
+  width: 500px;
+  height: 40px;
+  text-align: center;
+}
+#warning{
+  font-size: 60px;
+  display:inline-block;
+  text-align: center;
+  color: red;
+  margin-top: 100px;
+}
+#tick{
+  opacity: 0;
+}
+#tock{
+  opacity: 0;
+}
