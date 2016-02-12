@@ -6,6 +6,7 @@ $(document).ready(function(){
     var currentSeconds = currentTime.getSeconds();
 
     AmPm(currentHours);
+
     if (currentHours > 12){
       currentHours = (currentHours - 12)
     };
