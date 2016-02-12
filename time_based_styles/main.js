@@ -4,21 +4,39 @@ $(document).ready(function(){
     var currentHours = currentTime.getHours();
     var currentMinutes = currentTime.getMinutes();
     var currentSeconds = currentTime.getSeconds();
-    var currentMiliSeconds = currentTime.getMilliseconds();
+
+    if (currentHours > 12){
+      currentHours = (currentHours - 12)
+    };
+    if (currentHours == 0){
+      currentHours = 12;
+    };
 
     $('#hours').text(currentHours);
     $('#minutes').text(formatMinAndSec(currentMinutes));
     $('#seconds').text(formatMinAndSec(currentSeconds));
-    $('#miliseconds').text(currentMiliSeconds);
 
   ifMinOdd(currentMinutes);
   AmPm(currentHours);
+  changeColor(currentMinutes, currentSeconds);
+  hourChange(currentHours);
+  };
 
+  function displayMilliSec() {
+    var currentTime = new Date();
+    var currentMilliseconds = currentTime.getMilliseconds();
+    $('#milliseconds').text(formatMillisec(currentMilliseconds));
+  };
+
+
+  function hourChange(hour){
+    colorArray = ['lime', 'red', 'blue', 'green', 'black', 'yellow', 'orange', 'gray', 'violet', 'brown', 'bisque', 'teal'];
+    $('#hours').css('color', colorArray[hour-1]);
   };
 
   function AmPm(time) {
     if (time > 12) {
-      time = (time - 12);
+      return (time - 12);
       $('#ampm').text('PM');
     } else {
       $('#ampm').text('AM');
@@ -33,6 +51,16 @@ $(document).ready(function(){
    }
   };
 
+  function formatMillisec(Millisec){
+    if (Millisec < 10){
+        return '00' + Millisec;
+    } else if (Millisec < 100) {
+      return '0' + Millisec;
+    } else {
+      return Millisec;
+    }
+  };
+
   function ifMinOdd(min){
     if (min % 2 === 0) {
       $('#minutes').css('color', 'red');
@@ -41,14 +69,23 @@ $(document).ready(function(){
     }
   };
 
-  function randomColor(){
-    Math.floor((Math.random() * 10) + 1);
-
+  function changeColor(min, sec){
+    if ((min % 5 === 0) && (sec === 00)) {
+      randomColor();
+    }
   };
 
-  var number = Math.floor((Math.random() * 10) + 1);
-  console.log(number);
+  function randomColor(){
+    var color = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+    $('#clock').css('backgroundColor', color);
+  };
 
-  window.setInterval(displayTime, 1);
+  window.setInterval(displayTime, 1000);
+  window.setInterval(displayMilliSec, 1);
+  displayTime();
+  randomColor();
+
 });
+
+
 
