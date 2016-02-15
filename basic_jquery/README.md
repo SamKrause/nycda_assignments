@@ -11,6 +11,7 @@ I would like to add the following features:
 	2.A. This might be cooler if it is done on a hover over some div around the death star so it moves before you can actually click it.
 3. On click make a flash so it looks like possibly the Death Star went into hyperspace.
 4. Add more and different debris on explosion.
-5. Add a you win modal with an option to restart.
-6. If all of the above work - possibly add multiple levels with different enemy spacecraft that have varying difficutly to destroy.
+5. Set a timer and a
+6. Add a you win modal with an option to restart.
+7. If all of the above work - possibly add multiple levels with different enemy spacecraft that have varying difficutly to destroy.
 

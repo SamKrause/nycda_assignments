@@ -18,8 +18,8 @@ header {
   margin-top: 100px;
 }
 #tick{
-  opacity: 0;
+  display:none;
 }
 #tock{
-  opacity: 0;
+  display:none;
 }

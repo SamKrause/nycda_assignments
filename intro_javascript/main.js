@@ -17,22 +17,29 @@ $(document).ready(function(){
     };
 
     function warning(time){
-      if ((time < 60) && (time > 10)){
+      if (time >= 60){
+        $('#warning').text('You have plenty of time.').css('color', 'black');
+      } else if ((time < 60) && (time > 10)){
         $('#warning').text('You have less than a minute left!');
-      } else if (time < 10){
-        $('#warning').text('Hurry You Are Amost Out of Time!');
+      } else if ((time <= 10) && (time >= 1)){
+        $('#warning').text('Hurry You Are Amost Out of Time!').css('color', 'red');
+      } else {
+        $('#warning').text('OUT OF TIME!');
       };
     };
 
-//I was trying to get these to display going back and forth.
+//fixed
     function tickTock(time){
-      if (time % 2 === 0){
+      if (time === 0){
+        $('#tock').hide();
+        $('#tick').hide();
+      } else if (time % 2 === 0){
         $('#tick').show();
         $('#tock').hide();
       } else {
-        $('#tock').show;
+        $('#tock').show();
         $('#tick').hide();
-      };
+      }
     };
 
 
