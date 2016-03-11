@@ -1,0 +1,31 @@
+header {
+  text-align:center
+}
+
+.cookie-wrapper {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+/* justify-content: flex-start | flex-end | center | space-between | space-around; */
+/* align-items: flex-start | flex-end | center | baseline | stretch; */
+/* align-content: flex-start | flex-end | center | space-between | space-around | stretch; */
+
+}
+
+.cookie-column {
+  text-align: center;
+  width: 33%
+}
+
+.cookie-pic {
+  width: 18em;
+  height: 12em;
+}
+
+.cookie-pic:hover {
+  cursor: pointer;
+}
+
+.clear-button:hover {
+  cursor: pointer;
+}
