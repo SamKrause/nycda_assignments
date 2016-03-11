@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @boat = Boat.new
+    @boats = Boat.all
   end
 end
