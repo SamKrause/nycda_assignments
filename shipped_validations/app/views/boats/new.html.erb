@@ -1,0 +1,13 @@
+<% if current_user %>
+  <%= form_for @boat do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %><br>
+  <%= f.label :con_capacity %>
+  <%= f.text_field :con_capacity %><br>
+  <%= f.label :location %>
+  <%= f.text_field :location%><br>
+
+  <%= f.hidden_field :user_id, :value => current_user.id.to_i %>
+  <%= f.submit "New Boat" %>
+  <% end %>
+<% end %>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  boat_id: 1
+  name: MyString
+  con_require: 1
+  cargo: MyString
+  origin: MyString
+  cost: 1
+  destination: MyString
+
+two:
+  boat_id: 1
+  name: MyString
+  con_require: 1
+  cargo: MyString
+  origin: MyString
+  cost: 1
+  destination: MyString
