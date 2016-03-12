@@ -5,6 +5,7 @@ class JobsController < ApplicationController
 
   def create
     @job = Job.create(job_params)
+    redirect_to '/'
   end
 
   def destroy
@@ -19,7 +20,7 @@ class JobsController < ApplicationController
   private
 
   def job_params
-  params require(:job).permit(:name, :con_requirement, :destination, :boat_id, :origin, :cost)
+  params.require(:job).permit(:name, :con_require, :cargo, :destination, :boat_id, :origin, :cost)
   end
 
 end

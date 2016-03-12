@@ -11,6 +11,9 @@ class BoatsController < ApplicationController
   def update
   end
   def show
+    @boat = Boat.find(params[:id])
+    @job = Job.new
+    @jobs = Job.where(:boat_id => @boat.id)
   end
 
   private
