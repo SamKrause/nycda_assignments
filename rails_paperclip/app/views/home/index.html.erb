@@ -1,0 +1,25 @@
+<header>
+  <h1>National Pabst Time</h1>
+</header>
+<div>
+  <%= link_to("Sign Up", "/users/new") %>
+<!--   <a href="./users/new">Sign Up</a> -->
+  <%= link_to("All Users", "/users") %>
+<!--   <a href="./users">All Users</a> -->
+</div>
+<div>
+  <% if current_user %>
+    <%= link_to("Logout", "/logout" , method: :delete) %>
+  <% else %>
+    <%= form_for(:session, url: login_path) do |f| %>
+      <%= f.label :email %>
+      <%= f.email_field :email %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+
+      <%= f.submit "Log in" %>
+    <% end %>
+  <% end %>
+</div><br>
+<%= flash[:notice] if flash[:notice] %>

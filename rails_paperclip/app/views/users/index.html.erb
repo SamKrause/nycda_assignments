@@ -1,0 +1,6 @@
+<% @users.each do |user| %>
+  <%= user.team %><br>
+  <%= image_tag user.avatar.url(:medium) %><br>
+  <%= user.fname + " " + user.lname %><br>
+  <%= user.email %><br>
+<% end %>
