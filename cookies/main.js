@@ -2,6 +2,7 @@
 everything("sugar");
 everything("chocolate");
 everything("lemon");
+everything("rainbow")
 
 function everything(type) {
   setCounter(type);
@@ -10,15 +11,15 @@ function everything(type) {
   clearCounter(type);
 };
 
-function cookieCount(type, counter){
-  count = Cookies.get(type);
-  $(counter).html(count);
-};
-
 function setCounter(type) {
   if (!Cookies.get(type)) {
     Cookies.set(type, 0)
   };
+};
+
+function cookieCount(type, counter){
+  count = Cookies.get(type);
+  $(counter).html(count);
 };
 
 function order(type) {
