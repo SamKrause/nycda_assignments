@@ -2,9 +2,14 @@ body {
   margin: 0;
 }
 #sky {
-  height: 1000px;
+  height: 2000px;
   width: 100vw;
   background-color: aqua;
+  text-align: center;
+}
+
+#sky div {
+  margin-right: 5%;
 }
 
 #balloon1 {
@@ -48,7 +53,7 @@ body {
   margin: 0;
   display: inline-block;
   position: relative;
-  top: 300px;
+  top: 750px;
 }
 
 #balloon5 {
