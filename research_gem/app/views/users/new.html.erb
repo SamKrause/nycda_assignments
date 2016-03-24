@@ -1,0 +1,9 @@
+<%= form_for User.new do |f| %>
+  <%=f.label :email %>
+  <%=f.text_field :email %>
+  <%=f.label :role %>
+  <%= f.collection_select :role, User::ROLES, :to_s, :humanize %><br>
+  <%=f.label :password %>
+  <%=f.password_field :password %>
+  <%=f.submit :create %>
+<% end %>

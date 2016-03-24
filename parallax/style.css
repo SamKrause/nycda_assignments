@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+}
+#sky {
+  height: 1000px;
+  width: 100vw;
+  background-color: aqua;
+}
+
+#balloon1 {
+  background-image: url(./images/balloon1.png);
+  background-size: cover;
+  height: 250px;
+  width: 175px;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  top: 200px;
+}
+
+#balloon2 {
+  background-image: url(./images/balloon2.png);
+  background-size: cover;
+  height: 300px;
+  width: 300px;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  top: 500px;
+}
+
+#balloon3 {
+  background-image: url(./images/balloon3.png);
+  background-size: cover;
+  height: 400px;
+  width: 250px;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  top: 50px;
+}
+
+#balloon4 {
+  background-image: url(./images/balloon4.png);
+  background-size: cover;
+  height: 200px;
+  width: 75px;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  top: 300px;
+}
+
+#balloon5 {
+  background-image: url(./images/balloon5.png);
+  background-size: cover;
+  height: 370px;
+  width: 250px;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  top: 100px;
+}
