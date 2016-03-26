@@ -1,3 +1,25 @@
-<%= link_to("New User", "/users/new") %>
+<% if current_user %>
+  <%= link_to("New User", "/users/new") %>
+  <%= form_for(:session, url: login_path) do |f| %>
+    <%= f.label :email %>
+    <%= f.email_field :email %>
 
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+
+    <%= f.submit "Login" %>
+  <% end %>
+<% else %>
+  <%= link_to "Logout", '/logout', method: :delete %>
+<% end %>
+
+<h1>CanCanCan Testing Site!</h1>
+
+<% @posts.each do |post| %>
+<div>
+  <%= post.message %><br>
+  <%= find_user_email(post.user_id) %>
+  <%= link_to "Delete", posts_path(post.id), method: :delete %>
+</div>
+<% end %>
 

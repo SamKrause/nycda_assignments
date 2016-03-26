@@ -1,0 +1,332 @@
+/*pabst colors*/
+/*blue rgb(1, 71, 147) */
+/*red rgb(191, 25, 4)*/
+/*grey rgb(236, 236, 237) */
+
+
+body {
+  margin: 0;
+}
+
+/* MOBILE STYLE */
+/* Header */
+header {
+  text-align: center;
+  background-image: url(./images/sunrize_baseball.jpg);
+  background-size: cover;
+  height: 13.5rem;
+  width: 100vw;
+}
+
+.transparent {
+  display:block;
+  overflow: auto;
+  height: inherit;
+  background-color: rgba(0,0,0,0.4);
+}
+
+header h1 {
+  padding-top: 3.5rem;
+  color: white;
+}
+
+header h3 {
+  color: white;
+}
+
+/* Main Container */
+
+.filler {
+  height: 5rem;
+  background-color: rgb(1, 71, 147);
+}
+
+#main-container {
+
+}
+/* Teams */
+
+#teams {
+  text-align: center;
+  background-image: url(./images/pabst_beer_can.jpg);
+  background-size: 15rem;
+}
+
+#teams h2 {
+  margin:0;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-decoration: underline;
+  color: red;
+}
+
+.team-wrapper {
+  text-align: center;
+  background-color: white;
+  border-bottom: 3px rgb(1, 71, 147) solid;
+  border-left: 3px rgb(1, 71, 147) solid;
+  border-right: 3px rgb(1, 71, 147) solid;
+  width: 70vw;
+  margin-left: 15vw;
+}
+
+#first-team {
+  margin-top: 3rem;
+  border-top: 3px rgb(1, 71, 147) solid;
+}
+
+#last-team {
+  margin-bottom: 3rem;
+}
+
+.team-wrapper p {
+  margin: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: rgb(191, 25, 4);
+  font-size: 2em;
+}
+
+.team-wrapper .img {
+  height: 6rem;
+  width: 6rem;
+  background-size: cover;
+  background-position: center;
+  display:inline-block;
+  margin-bottom: 1rem;
+}
+
+#philly-img {
+  background-image: url(./images/philly_freedom.jpg);
+}
+
+#train-img {
+  background-image: url(./images/iron_train.jpg);
+}
+
+#log-img {
+  background-image: url(./images/log.jpg);
+}
+
+#ninja-img {
+ background-image: url(./images/ninja_blacksox.jpg);
+}
+
+#dragon-img {
+ background-image: url(./images/madison_dragons.jpg);
+}
+
+#riot-img {
+  background-image: url(./images/l_a_riots.jpg);
+}
+
+#meema-img {
+  background-image: url(./images/meemas_tablesetters.jpg);
+}
+
+#adderall-img {
+  background-image: url(./images/adderall.jpg);
+}
+
+#swingers-img {
+  background-image: url(./images/swingers.jpg);
+}
+#crush-img {
+  background-image: url(./images/crush.jpg);
+}
+
+/* History */
+
+#history .filler {
+  background-color: rgb(191, 25, 4);
+  text-align: center;
+}
+
+#history {
+  background-image: url(./images/confetti.jpg);
+  background-size: 100vw 20rem;
+  padding-bottom: 2rem;
+}
+
+#history h2 {
+  margin:0;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-decoration: underline;
+  color: rgb(236, 236, 237);
+}
+
+.history-wrapper {
+  text-align: center;
+  width: 50vw;
+  margin-left: 25vw;
+  margin-top: 2rem;
+}
+
+.history-wrapper p {
+  margin: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.silver {
+  background-color: rgb(192, 192, 192);
+}
+
+#silver1 {
+  display: none;
+}
+
+#gold {
+  background-color: rgb(248, 190, 25);
+}
+
+#bronze {
+  background-color: rgb(191, 108, 68);
+}
+
+.history-wrapper .img {
+  height: 8rem;
+  width: 6rem;
+  background-size: cover;
+  background-position: center;
+
+  display:inline-block;
+  margin-bottom: 1rem;
+}
+
+.silver .img {
+  background-image: url(./images/silver.png);
+}
+
+#gold .img {
+  background-image: url(./images/gold.png);
+}
+
+#bronze .img {
+  background-image: url(./images/bronze.png);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: rgb(1, 71, 147);
+  padding: 2rem 0;
+}
+
+footer h3 {
+  margin: 0;
+  display: inline-block;
+  padding: 1rem 4rem;
+  color: white;
+  background-color: rgb(191, 25, 4);
+}
+
+@media all and (min-width: 415px){
+
+  header h1 {
+    font-size: 4rem;
+    padding-top: 0;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+  header{
+    height: 20rem;
+    background-position: 50% 30%;
+  }
+
+  #history-flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .history-wrapper {
+    width: 13rem;
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+
+}
+
+@media all and (min-width: 768px){
+
+  body {
+    background-color: rgb(1, 71, 147);
+    text-align: center;
+  }
+
+  header {
+    width: 47rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    background-position: fixed:;
+    display:inline-block;
+    border: 5px solid rgb(191, 25, 4);
+  }
+
+  #team-flex {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .team-wrapper {
+    width: 20rem;
+    margin-left: 0;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+  }
+
+  #first-team {
+    margin-top: 0;
+  }
+
+  #history-flex {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .silver {
+    margin-right: 2rem;
+    height: 20rem;
+  }
+
+  #silver1 {
+    display: initial;
+  }
+
+  #silver2 {
+    display: none;
+  }
+
+  #gold {
+    height: 25rem;
+  }
+
+  #bronze {
+    margin-left: 2rem;
+  }
+
+  #gif {
+    height: 10rem;
+    width: 13rem;
+    background-image: url(./images/phillies_hit.gif);
+    background-size: cover;
+    border: 5px solid rgb(191, 25, 4);
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+
+}
